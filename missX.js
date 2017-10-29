@@ -12,7 +12,7 @@ fs.readdirSync('./').forEach(studentName => {
         fs.readdirSync(`./${studentName}`).forEach(runnerFolder => {
             if (runnerFolder === 'ExerciseRunner') {
                 
-                fs.readdirSync(`./${studentName}/ExerciseRunner`).for Each(exsFolder => {
+                fs.readdirSync(`./${studentName}/ExerciseRunner`).forEach(exsFolder => {
                     if (exsFolder === 'ex') {
                         isFolderValid = true
                         var exs = fs.readdirSync(`./${studentName}/ExerciseRunner/ex`)
